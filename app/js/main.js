@@ -1,5 +1,5 @@
 $(function () {
-  /*   $('.header__btn').on('click', function {
+  /*    $('.header__btn').on('click', function {
       $('.rightside-menu').removeClass('rightside-menu--close');
   });
   $('.rightside-menu__btn-close').on('click', function {
@@ -10,5 +10,11 @@ $(function () {
     arrows: false,
     fade: true,
     autoplay: true,
+  });
+
+  var mixer = mixitup('.gallery__inner', {
+    load: {
+      filter: '.livingroom',
+    },
   });
 });
