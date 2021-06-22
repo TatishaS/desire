@@ -60,3 +60,22 @@ body {
     }
   }
 }
+
+.email {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  color: $black;
+  padding-left: 30px;
+  margin-bottom: 22px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url(../images/icon-envelope.svg);
+    top: 8px;
+    left: 0;
+    width: 16px;
+    height: 12px;
+  }
+}
