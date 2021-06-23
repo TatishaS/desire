@@ -17,6 +17,9 @@
     padding: 0;
     cursor: pointer;
   }
+  &__btn-menu {
+    display: none;
+  }
 }
 
 .logo {
@@ -248,11 +251,17 @@
   z-index: 10;
   &__list {
     display: flex;
+    overflow-x: auto;
+  }
+  &__item {
+    position: relative;
+    padding-right: 8px;
   }
   &__item::after {
     content: '/';
-    margin-left: -4px;
-    margin-right: 4px;
+    //margin-left: -4px;
+    //margin-right: 4px;
+    position: absolute;
   }
   &__item:last-child::after {
     display: none;
@@ -1232,3 +1241,5 @@
     cursor: pointer;
   }
 }
+
+@import 'media';
