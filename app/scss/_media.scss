@@ -54,6 +54,9 @@
   .header__btn {
     display: none;
   }
+  .menu {
+    padding: 0;
+  }
   .menu__list-item {
     padding-left: 0;
 
@@ -173,7 +176,6 @@
     }
   }
   .menu {
-    padding-right: 0;
     width: 100%;
     background-color: #fff;
     position: relative;
