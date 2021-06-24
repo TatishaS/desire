@@ -9,6 +9,12 @@ $(function () {
     $('.menu').toggleClass('menu--open');
   });
 
+  if ($(window).width() < 651) {
+    $('.works-process__item--measuring').appendTo(
+      $('.works-process__items-box')
+    );
+  }
+
   $('.top__slider').slick({
     dots: true,
     arrows: false,
