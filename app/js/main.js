@@ -26,6 +26,52 @@ $(function () {
     slidesToScroll: 3,
     dots: true,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 8,
+        },
+      },
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 6,
+        },
+      },
+      {
+        breakpoint: 1367,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        },
+      },
+      {
+        breakpoint: 841,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 551,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 376,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          autoplay: true,
+        },
+      },
+    ],
   });
 
   $('.article-slider__box').slick({
